@@ -44,7 +44,6 @@ jobs:
       with:
         context: ${{ env.dockerfilePath  }}
         file: "${{ env.dockerfilePath }}/Dockerfile"
-        pull: true
         push: true
         tags: |
           ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}
